@@ -519,15 +519,15 @@ body:not(.user-is-tabbing) a:focus {
   flex-direction: column;
   gap: 3rem;
   align-items: center;
-  max-width: 900px;
+  max-width: 1000px; 
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 1.5rem; 
 }
 
 .shadowloop-main-video video {
   width: 100%;
-  max-width: 700px;
-  height: 320px;
+  max-width: 800px; 
+  height: 360px; 
   border-radius: 8px;
   object-fit: cover;
 }
@@ -536,43 +536,56 @@ body:not(.user-is-tabbing) a:focus {
   display: flex;
   gap: 4rem;
   width: 100%;
-  justify-content: center;
-  max-width: 900px;
+  max-width: 1000px; 
+  justify-content: space-between; 
 }
 
 .text-column {
   flex: 1;
+  max-width: 48%; 
 }
 
 .shadowloop-small-videos {
   display: flex;
   gap: 2rem;
   width: 100%;
-  max-width: 700px;
+  max-width: 800px; 
   justify-content: center;
 }
 
 .shadowloop-small-videos video {
   width: 48%;
-  height: 200px;
+  height: 240px; 
   border-radius: 8px;
   object-fit: cover;
 }
 
-/* Responsive per schermi piccoli */
+
+.shadowloop-container {
+  margin-top: 3rem; 
+}
+
+
 @media (max-width: 900px) {
   .shadowloop-text-columns {
     flex-direction: column;
     gap: 2rem;
+    max-width: 100%;
+  }
+
+  .text-column {
+    max-width: 100%;
   }
 
   .shadowloop-small-videos {
     flex-direction: column;
     gap: 2rem;
+    max-width: 100%;
   }
 
   .shadowloop-small-videos video {
     width: 100%;
+    height: auto;
   }
 }
 
