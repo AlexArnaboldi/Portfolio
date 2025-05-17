@@ -1,9 +1,6 @@
 /* --------------------------------------- */
 /* ----- Basic Setup ----- */
 /* --------------------------------------- */
-.hero{
-    margin-top: -40px;
-}
 
 @font-face {
     font-family: 'Hk Grotesk';
@@ -136,6 +133,7 @@ h3 {
     line-height: 1;
     font-size: var(--font-size-huge);
     font-weight: 400;
+    margin-top: -40px;
 }
 
 @media(max-width: 900px) {
