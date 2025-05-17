@@ -520,7 +520,7 @@ body:not(.user-is-tabbing) a:focus {
   gap: 3rem;
   align-items: center;
   max-width: 1000px; 
-  margin: 0 auto;
+  margin: 0 auto 25rem auto;
   padding: 0 1.5rem; 
 }
 
