@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <title>
+    Alex Arnaboldi | Aspiring Game Developer
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#overview" class="nav__link">Overview</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <div>
+          <h1 class="heading-primary">
+            <span>Alex Arnaboldi</span>
+          </h1>
+          <p>Aspiring Game Developer</p>
+        </div>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <section class="overview" id="overview">
+      <div class="row">
+        <h2>Overview</h2>
+        <div style="display: flex; justify-content: space-between; align-items: start;">
+          <div style="padding: 1em; max-width: 30%;" class="card">
+            <div style="width: 100%; margin-bottom: 1em; max-height: 160px; overflow: hidden;" class="thumbnail">
+              <img style="object-fit: cover !important;" src="./images/ShadowLoop/Overview.png" alt="Company 2" />
+            </div>
+            <div class="card-text">
+              <h3>Shadowloop</h3>
+              <p>
+                A team-based project development under real production constraints, featuring tight deadlines and
+                collaborative workflows.
+              </p>
+              <ul style="padding: 1em;">
+                <li>Unreal Engine</li>
+                <li>Blueprint</li>
+                <li>C++</li>
+              </ul>
+            </div>
+          </div>
+          <div style="padding: 1em; max-width: 30%;" class="card">
+            <div style="width: 100%; margin-bottom: 1em; max-height: 160px; overflow: hidden;" class="thumbnail">
+              <img style="object-fit: cover !important;" src="./images/Platforming/Overview.png" alt="Company 2" />
+            </div>
+            <div class="card-text">
+              <h3>Platforming Project</h3>
+              <p>
+                A didactic academic prototype like "the floor is lava". It explores mechanics of movement and
+                interaction.
+              </p>
+              <ul style="padding: 1em;">
+                <li>Unreal Engine</li>
+                <li>Blueprint</li>
+              </ul>
+            </div>
+          </div>
+          <div style="padding: 1em; max-width: 30%;" class="card">
+            <div style="width: 100%; margin-bottom: 1em; max-height: 160px; overflow: hidden;" class="thumbnail">
+              <img style="object-fit: cover !important;" src="./images/RetroGames/Overview.png" alt="Company 2" />
+            </div>
+            <div class="card-text">
+              <h3>Retro Games Collection</h3>
+              <p>
+                A series of amateur retro games. While based on classic mechanics, each includes custom features and
+                personal design choise.
+              </p>
+              <ul style="padding: 1em;">
+                <li>Unity</li>
+                <li>C#</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="work" id="work">
+      <div class="row">
+        <div class="work__boxes">
+          <h2>SHADOWLOOP</h2>
+          <div class="work__box">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1em;">
+              <div style="flex: 1 1 20%; min-width: 20%; max-width: 24%;">
+                <video autoplay muted loop style="width: 100%; height: 320px; border-radius: 8px; object-fit: cover;">
+                  <source src="./images/ShadowLoop/SDL-Resolution.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div style="flex: 1 1 20%; min-width: 15%; max-width: 20%;">
+                <h3>
+                  <em>First-person puzzle horror game</em>
+                </h3>
+                <p>
+                  Shadowloop is a first-person horror puzzle game in which the player must solve environmental
+                  challenges to break out of a recurring time loop.<br><br>
+                  The project was developed in a structured team environment, simulating a professional studio workflow
+                  with a clear division between designers and programmers.
+                  The game features interactive physics-based object rotation, enemy AI, and dynamic level transitions.
+                </p>
+                Role: Game Programmer.
+                <ul style="margin-left: 1em;">
+                  <li> Unreal Engine 5</li>
+                  <li>C++</li>
+                  <li>Blueprint</li>
+                </ul>
+              </div>
+              <div style="flex: 1 1 20%; min-width: 15%; max-width: 20%;">
+                <h4>My contributions:</h4>
+                <ul style="margin-left: 1em;">
+                  <li>Developed the core loop mechanic, repositioning the player in real time to simulate a recursive
+                    environment.</li>
+                  <li>Created the main menu system, including communication between UI elements and in-scene Actors for
+                    a responsive startup flow.</li>
+                  <li>Designed and implemented the in-game UI: pause menu, game over screen, and credits panel, building
+                    a communicative flow between transitions and menus to maintain clarity and immersion.</li>
+                  <li>Built a basic save system to store key player progress and game state data across sessions.</li>
+                </ul>
+              </div>
+              <div
+                style="flex: 1 1 20%; min-width: 20%; max-width: 24%; display: flex; flex-direction: column; gap: 1em;">
+                <video autoplay muted loop style="width: 100%; height: 200px; border-radius: 8px; object-fit: cover;">
+                  <source src="./images/ShadowLoop/clipmenu.mp4" type="video/mp4">
+                </video>
+                <video autoplay muted loop style="width: 100%; height: 200px; border-radius: 8px; object-fit: cover;">
+                  <source src="./images/ShadowLoop/SDL-LoopMec2.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+
+          <h2>PLATFORMING PROJECT</h2>
+          <div class="work__box">
+            <div class="work__box">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1em;">
+                <div style="flex: 1 1 20%; min-width: 30%; max-width: 32%;">
+                  <video autoplay muted loop style="width: 100%; height: 320px; border-radius: 8px; object-fit: cover;">
+                    <source src="./images/Platforming/Platforming.mp4" type="video/mp4">
+                  </video>
+                </div>
+                <div style="flex: 1 1 20%; min-width: 30%; max-width: 32%;">
+                  <h3>
+                    <em>Third-person platforming Academic project</em>
+                  </h3>
+                  <p>
+                    A didactic third-person platforming prototype developed to practice core functionalities in Unreal
+                    Engine 5 using Blueprints.
+                    The project explores foundational gameplay systems, interface design, and visual feedback
+                    integration.
+                  </p>
+                  Role: Game Programmer.
+                  <ul style="margin-left: 1em;">
+                    <li> Unreal Engine 5</li>
+                    <li>Blueprint</li>
+                  </ul>
+                </div>
+                <div style="flex: 1 1 20%; min-width: 30%; max-width: 32%;">
+                  <h4>Features:</h4>
+                  <ul style="margin-left: 1em;">
+                    <li>Respawn and checkpoint system</li>
+                    <li>Gameplay mechanics, including shooting that adapts to player movement</li>
+                    <li>Visual effects using Materials, Material Instances, and Niagara particle systems</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <h2>RETRO GAMES COLLECTION</h2>
+          <div class="work__box">
+            <div class="work__box">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2em;">
+                <div
+                style="flex: 1 1 20%; min-width: 30%; max-width: 30%; display: flex; flex-direction: column; gap: 1em;">
+                  <video autoplay muted loop style="width: 100%; height: 320px; border-radius: 8px; object-fit: cover;">
+                    <source src="./images/RetroGames/Snake.mp4" type="video/mp4">
+                  </video>
+              </div>
+                <div style="flex: 1 1 20%; min-width: 25%; max-width: 25%;">
+                  <h3>
+                    <em>Self 2D pixel art games</em>
+                  </h3>
+                  <p>
+                    Classic arcade games like Pong, Snake, Asteroids, and Space Invaders, recreated with added player abilities and custom features to practice coding and design.
+                  </p>
+                  Role: Game Programmer.
+                  <ul style="margin-left: 1em;">
+                    <li>Unity</li>
+                    <li>C#</li>
+                  </ul>
+                </div>
+                <div
+                style="flex: 1 1 20%; min-width: 30%; max-width: 30%; display: flex; flex-direction: column; gap: 1em;">
+                  <video autoplay muted loop style="width: 100%; height: 320px; border-radius: 8px; object-fit: cover;">
+                    <source src="./images/RetroGames/SpaceInvader.mp4" type="video/mp4">
+                  </video>
+              </div>
+              </div>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              My name is Alex, and I am an aspiring game developer currently honing my skills. I live in Ponte Lambro, a small town in the province of Como, situated between the lowest points of the Como and Lecco branches of the lake.
+With an artistic background and driven by strong passion and determination, I decided to create opportunities for myself to follow the world that has fascinated me since I was young: video games.
+Beyond game development, I enjoy playing volleyball, staying active through physical exercise, and I’m passionate about learning something new every day.
+            </p>
+            <a href="#" class="btn">My Resume</a> -->
+          </div>
+
+          <div class="about__photo-container">
+            <img
+              class="about__photo"
+              src="./images/foto-profilo.png"
+              alt="Profile photo"
+              style="
+                display: block;
+                width: 450px;
+                height: 450px;
+                object-fit: cover;
+                border-radius: 50%;
+                overflow: hidden;
+                box-shadow: 0 2px 16px rgba(0,0,0,0.15);
+                margin: 0 auto;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div style="display: flex; justify-content: center; align-items: center; gap: 8em;">
+        <div>
+          <a href="mailto:alex.arnaboldi97@hotmail.com" class="btn">alex.arnaboldi97@hotmail.com</a>
+        </div>
+        <ul class="footer__social-links">
+          <li class="footer__social-link-item">
+            <a href="https://www.linkedin.com/in/alex-arnaboldi-127492363">
+              <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
+                alt="Linkedin">
+            </a>
+          </li>
+          <li class="footer__social-link-item">
+            <a href="https://github.com/AlexArnaboldi" title="Link to Github Profile">
+              <img src="./images/github.svg" class="footer__social-image" alt="Github">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
