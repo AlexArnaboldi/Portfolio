@@ -133,7 +133,6 @@ h3 {
     line-height: 1;
     font-size: var(--font-size-huge);
     font-weight: 400;
-    margin-top: -40px;
 }
 
 @media(max-width: 900px) {
@@ -418,7 +417,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .header__text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 0;
     margin: 0 auto;
     transform: translateY(-50%);
