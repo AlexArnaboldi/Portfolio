@@ -1441,3 +1441,22 @@ body:not(.user-is-tabbing) a:focus {
 .project-card p {
   margin: 0.5rem 0 0; /* spazio sotto l'immagine e tra testo */
 }
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* le rende tutte alte uguali */
+  flex-wrap: wrap; /* permette di andare a capo se lo schermo è stretto */
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* tre colonne */
+  max-width: calc(33.333% - 20px);
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
