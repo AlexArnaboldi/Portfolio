@@ -1422,3 +1422,22 @@ body:not(.user-is-tabbing) a:focus {
   font-size: 1.6rem;
   color: var(--white-1);
 }
+
+.project-card {
+  display: flex;
+  flex-direction: column; /* immagine sopra, testo sotto */
+  text-align: center;
+  margin-bottom: 1.5rem; /* spazio tra le card */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px; /* opzionale, angoli arrotondati */
+}
+
+.project-card h3,
+.project-card p {
+  margin: 0.5rem 0 0; /* spazio sotto l'immagine e tra testo */
+}
