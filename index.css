@@ -1447,19 +1447,22 @@ body:not(.user-is-tabbing) a:focus {
 
 .thumbnail {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
 .thumbnail img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 50%; /* immagini tonde */
+  width: 200px;       /* stessa larghezza e altezza per il cerchio */
+  height: 200px;
+  object-fit: cover;  /* ritaglia l’immagine senza deformarla */
+  border-radius: 50%; /* cerchio perfetto */
   transition: border-radius 0.3s ease;
 }
 
 .thumbnail img:hover {
-  border-radius: 12px; /* rettangolari con angoli arrotondati al passaggio del mouse */
+  border-radius: 12px; /* rettangolo con angoli arrotondati al passaggio del mouse */
 }
 
 .card-text {
