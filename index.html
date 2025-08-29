@@ -19,32 +19,37 @@
 
 
   <header class="header" role="banner" id="top">
-    <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item"><a href="#overview" class="nav__link">Overview</a></li>
-          <li class="nav__item"><a href="#shadowloop">Works</a></li>  <!-- mettere primo progetto -->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <div class="header__text-box row">
-      <div class="header__text">
-        <div>
-          <h1 class="heading-primary">
-            <span>Alex Arnaboldi</span>
-          </h1>
-          <p>Game Developer</p>
-        </div>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+  <div class="row">
+    <nav class="nav" role="navigation">
+      <ul class="nav__items">
+        <li class="nav__item">
+          <a href="#overview" class="nav__link">Overview</a>
+        </li>
+        <li class="nav__item">
+          <a href="#shadowloop" class="nav__link">Works</a> <!-- ora ha la stessa classe -->
+        </li>
+        <li class="nav__item">
+          <a href="#about" class="nav__link">About</a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="header__text-box row">
+    <div class="header__text">
+      <div>
+        <h1 class="heading-primary">
+          <span>Alex Arnaboldi</span>
+        </h1>
+        <p>Game Developer</p>
       </div>
+      <a href="#contact" class="btn btn--pink">Get in touch</a>
     </div>
-  </header>
+  </div>
+</header>
 
   <main role="main">
 
@@ -118,63 +123,61 @@
   </div>
 </section>
 
-    <section class="work" id="shadowloop">
-      <div class="row">
-        <div class="work__boxes">
-          <h2>SHADOWLOOP</h2>
-          <div class="workbox">
-        <div class="shadowloop-container">
+    <!-- 🔹 Shadowloop -->
+<section class="work" id="shadowloop">
+  <div class="work__boxes">
+    <h2>SHADOWLOOP</h2>
+    <div class="shadowloop-container">
 
-          <!-- Video grande centrale -->
-          <div class="shadowloop-main-video">
-            <video autoplay muted loop style="width: 100%; height: 520px; border-radius: 8px; object-fit: cover;">
-              <source src="./images/ShadowLoop/SDL-Resolution.mp4" type="video/mp4">
-            </video>
-          </div>
+      <!-- Video grande centrale -->
+      <div class="shadowloop-main-video">
+        <video autoplay muted loop style="width: 100%; height: 520px; border-radius: 8px; object-fit: cover;">
+          <source src="./images/ShadowLoop/SDL-Resolution.mp4" type="video/mp4">
+        </video>
+      </div>
 
-          <!-- Due colonne di testo affiancate -->
-          <div class="shadowloop-text-columns">
-            <div class="text-column">
-              <h3><em>First-person puzzle horror game</em></h3>
-              <p>
-                Shadowloop is a first-person horror puzzle game in which the player must solve environmental
-                challenges to break out of a recurring time loop.<br><br>
-                The project was developed in a structured team environment, simulating a professional studio workflow
-                with a clear division between designers and programmers.
-                The game features interactive physics-based object rotation, enemy AI, and dynamic level transitions.
-              </p>
-              Role: Game Programmer.
-              <ul>
-                <li>Unreal Engine 5</li>
-                <li>C++</li>
-                <li>Blueprint</li>
-              </ul>
-            </div>
-            <div class="text-column">
-              <h4>My contributions:</h4>
-              <ul>
-                <li>Developed the core loop mechanic, repositioning the player in real time to simulate a recursive
-                  environment.</li>
-                <li>Created the main menu system, including communication between UI elements and in-scene Actors for
-                  a responsive startup flow.</li>
-                <li>Designed and implemented the in-game UI: pause menu, game over screen, and credits panel, building
-                  a communicative flow between transitions and menus to maintain clarity and immersion.</li>
-                <li>Built a basic save system to store key player progress and game state data across sessions.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- I due video piccoli in riga -->
-          <div class="shadowloop-small-videos">
-            <video autoplay muted loop style="width: 70%; height: 260px; border-radius: 8px; object-fit: cover;">
-              <source src="./images/ShadowLoop/clipmenu.mp4" type="video/mp4">
-            </video>
-            <video autoplay muted loop style="width: 70%; height: 260px; border-radius: 8px; object-fit: cover;">
-              <source src="./images/ShadowLoop/SDL-LoopMec2.mp4" type="video/mp4">
-            </video>
-          </div>
+      <!-- Due colonne di testo affiancate -->
+      <div class="shadowloop-text-columns">
+        <div class="text-column">
+          <h3><em>First-person puzzle horror game</em></h3>
+          <p>
+            Shadowloop is a first-person horror puzzle game in which the player must solve environmental
+            challenges to break out of a recurring time loop.<br><br>
+            The project was developed in a structured team environment, simulating a professional studio workflow
+            with a clear division between designers and programmers.
+            The game features interactive physics-based object rotation, enemy AI, and dynamic level transitions.
+          </p>
+          Role: Game Programmer.
+          <ul>
+            <li>Unreal Engine 5</li>
+            <li>C++</li>
+            <li>Blueprint</li>
+          </ul>
+        </div>
+        <div class="text-column">
+          <h4>My contributions:</h4>
+          <ul>
+            <li>Developed the core loop mechanic, repositioning the player in real time to simulate a recursive environment.</li>
+            <li>Created the main menu system, including communication between UI elements and in-scene Actors for a responsive startup flow.</li>
+            <li>Designed and implemented the in-game UI: pause menu, game over screen, and credits panel, building a communicative flow between transitions and menus to maintain clarity and immersion.</li>
+            <li>Built a basic save system to store key player progress and game state data across sessions.</li>
+          </ul>
         </div>
       </div>
+
+      <!-- I due video piccoli in riga -->
+      <div class="shadowloop-small-videos">
+        <video autoplay muted loop style="width: 70%; height: 260px; border-radius: 8px; object-fit: cover;">
+          <source src="./images/ShadowLoop/clipmenu.mp4" type="video/mp4">
+        </video>
+        <video autoplay muted loop style="width: 70%; height: 260px; border-radius: 8px; object-fit: cover;">
+          <source src="./images/ShadowLoop/SDL-LoopMec2.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- 🔹 Platforming Project -->
 <section class="work" id="platforming">
@@ -196,8 +199,7 @@
           <p>
             A didactic third-person platforming prototype developed to practice core functionalities in Unreal
             Engine 5 using Blueprints.
-            The project explores foundational gameplay systems, interface design, and visual feedback
-            integration.
+            The project explores foundational gameplay systems, interface design, and visual feedback integration.
           </p>
           Role: Game Programmer.
           <ul style="margin-left: 1em;">
@@ -221,44 +223,45 @@
   </div>
 </section>
 
-        <h2>RETRO GAMES COLLECTION</h2>
-          <div class="work__box">
-            <div class="work__box">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2em;">
-                <div
-                style="flex: 1 1 20%; min-width: 40%; max-width: 30%; display: flex; flex-direction: column; gap: 1em;">
-                  <video autoplay muted loop style="width: 100%; height: 350px; border-radius: 8px; object-fit: cover;">
-                    <source src="./images/RetroGames/Snake.mp4" type="video/mp4">
-                  </video>
-              </div>
-                <div style="flex: 1 1 20%; min-width: 25%; max-width: 25%;">
-                  <h3>
-                    <em>Self 2D pixel art games</em>
-                  </h3>
-                  <p>
-                    Classic arcade games like Pong, Snake, Asteroids, and Space Invaders, recreated with added player abilities and custom features to practice coding and design.
-                  </p>
-                  Role: Game Programmer.
-                  <ul style="margin-left: 1em;">
-                    <li>Unity</li>
-                    <li>C#</li>
-                  </ul>
-                </div>
-                <div
-                style="flex: 1 1 20%; min-width: 40%; max-width: 30%; display: flex; flex-direction: column; gap: 1em;">
-                  <video autoplay muted loop style="width: 100%; height: 350px; border-radius: 8px; object-fit: cover;">
-                    <source src="./images/RetroGames/SpaceInvader.mp4" type="video/mp4">
-                  </video>
-              </div>
-              </div>
-            </div>
-          </div>
-          
-          
-          
+
+<!-- 🔹 Retro Games Collection -->
+<section class="work" id="retrogames">
+  <div class="work__boxes">
+    <h2>RETRO GAMES COLLECTION</h2>
+    <div class="work__box">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 2em; flex-wrap: wrap;">
+        
+        <!-- Video sinistro -->
+        <div style="flex: 1 1 30%; min-width: 300px; max-width: 32%; display: flex; flex-direction: column; gap: 1em;">
+          <video autoplay muted loop style="width: 100%; height: 350px; border-radius: 8px; object-fit: cover;">
+            <source src="./images/RetroGames/Snake.mp4" type="video/mp4">
+          </video>
         </div>
+
+        <!-- Descrizione -->
+        <div style="flex: 1 1 30%; min-width: 300px; max-width: 32%;">
+          <h3><em>Self 2D pixel art games</em></h3>
+          <p>
+            Classic arcade games like Pong, Snake, Asteroids, and Space Invaders, recreated with added player abilities and custom features to practice coding and design.
+          </p>
+          Role: Game Programmer.
+          <ul style="margin-left: 1em;">
+            <li>Unity</li>
+            <li>C#</li>
+          </ul>
+        </div>
+
+        <!-- Video destro -->
+        <div style="flex: 1 1 30%; min-width: 300px; max-width: 32%; display: flex; flex-direction: column; gap: 1em;">
+          <video autoplay muted loop style="width: 100%; height: 350px; border-radius: 8px; object-fit: cover;">
+            <source src="./images/RetroGames/SpaceInvader.mp4" type="video/mp4">
+          </video>
+        </div>
+
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <section class="about" id="about">
       <div class="row">
