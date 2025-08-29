@@ -23,7 +23,8 @@
       <nav class="nav" role="navigation">
         <ul class="nav__items">
           <li class="nav__item"><a href="#overview" class="nav__link">Overview</a></li>
-          <li class="nav__item"><a href="#work" class="nav__link">Works</a></li>
+          <li class="nav__item"><a href="#shadowloop">Works</a></li>  <!-- mettere primo progetto -->
+          <a href="#shadowloop">Works</a>
           <li class="nav__item">
             <a href="#about" class="nav__link">About</a>
           </li>
@@ -52,7 +53,7 @@
   <div class="row">
     <h2>Overview</h2>
     <div class="projects-container">
-  
+
     <!-- Shadowloop -->
     <div class="card">
       <div class="thumbnail">
@@ -67,9 +68,9 @@
           collaborative workflows.
         </p>
         <ul>
-          <li>Unreal Engine</li>
-          <li>Blueprint</li>
-          <li>C++</li>
+          <li>- Unreal Engine</li>
+          <li>- Blueprint</li>
+          <li>- C++</li>
         </ul>
       </div>
     </div>
@@ -118,8 +119,8 @@
   </div>
 </section>
 
-    <section class="work" id="work">
-      <div class="work-project" id="shadowloop">
+    <section class="work" id="shadowloop">
+      <div class="row">
         <div class="work__boxes">
           <h2>SHADOWLOOP</h2>
           <div class="workbox">
@@ -176,42 +177,50 @@
         </div>
       </div>
 
-          <h2>PLATFORMING PROJECT</h2>
-          <div class="work__box">
-            <div class="work__box">
-              <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1em;">
-                <div style="flex: 1 1 20%; min-width: 50%; max-width: 32%;">
-                  <video autoplay muted loop style="width: 100%; height: 450px; border-radius: 8px; object-fit: cover;">
-                    <source src="./images/Platforming/Platforming.mp4" type="video/mp4">
-                  </video>
-                </div>
-                <div style="flex: 1 1 20%; min-width: 30%; max-width: 32%;">
-                  <h3>
-                    <em>Third-person platforming Academic project</em>
-                  </h3>
-                  <p>
-                    A didactic third-person platforming prototype developed to practice core functionalities in Unreal
-                    Engine 5 using Blueprints.
-                    The project explores foundational gameplay systems, interface design, and visual feedback
-                    integration.
-                  </p>
-                  Role: Game Programmer.
-                  <ul style="margin-left: 1em;">
-                    <li> Unreal Engine 5</li>
-                    <li>Blueprint</li>
-                  </ul>
-                </div>
-                <div style="flex: 1 1 20%; min-width: 30%; max-width: 32%;">
-                  <h4>Features:</h4>
-                  <ul style="margin-left: 1em;">
-                    <li>Respawn and checkpoint system</li>
-                    <li>Gameplay mechanics, including shooting that adapts to player movement</li>
-                    <li>Visual effects using Materials, Material Instances, and Niagara particle systems</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
+<!-- 🔹 Platforming Project -->
+<section class="work" id="platforming">
+  <div class="work__boxes">
+    <h2>PLATFORMING PROJECT</h2>
+    <div class="work__box">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 1em; flex-wrap: wrap;">
+        
+        <!-- Colonna Video -->
+        <div style="flex: 1 1 30%; min-width: 300px; max-width: 32%;">
+          <video autoplay muted loop style="width: 100%; height: 450px; border-radius: 8px; object-fit: cover;">
+            <source src="./images/Platforming/Platforming.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <!-- Colonna Descrizione -->
+        <div style="flex: 1 1 30%; min-width: 300px; max-width: 32%;">
+          <h3><em>Third-person platforming Academic project</em></h3>
+          <p>
+            A didactic third-person platforming prototype developed to practice core functionalities in Unreal
+            Engine 5 using Blueprints.
+            The project explores foundational gameplay systems, interface design, and visual feedback
+            integration.
+          </p>
+          Role: Game Programmer.
+          <ul style="margin-left: 1em;">
+            <li>Unreal Engine 5</li>
+            <li>Blueprint</li>
+          </ul>
+        </div>
+
+        <!-- Colonna Features -->
+        <div style="flex: 1 1 30%; min-width: 300px; max-width: 32%;">
+          <h4>Features:</h4>
+          <ul style="margin-left: 1em;">
+            <li>Respawn and checkpoint system</li>
+            <li>Gameplay mechanics, including shooting that adapts to player movement</li>
+            <li>Visual effects using Materials, Material Instances, and Niagara particle systems</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
 
         <h2>RETRO GAMES COLLECTION</h2>
           <div class="work__box">
