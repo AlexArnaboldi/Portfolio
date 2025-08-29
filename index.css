@@ -1422,7 +1422,6 @@ body:not(.user-is-tabbing) a:focus {
   font-size: 1.6rem;
   color: var(--white-1);
 }
-
 /* --------------------------------------- */
 /* ----- Projects / Cards ----- */
 /* --------------------------------------- */
@@ -1431,8 +1430,8 @@ body:not(.user-is-tabbing) a:focus {
   display: flex;
   justify-content: space-between;
   align-items: stretch; /* rende tutte le card alte uguali */
-  flex-wrap: wrap;       /* permette di andare a capo se lo schermo è stretto */
-  gap: 20px;             /* spazio tra le card */
+  flex-wrap: wrap;      /* permette di andare a capo se lo schermo è stretto */
+  gap: 20px;            /* spazio tra le card */
 }
 
 .card {
@@ -1461,26 +1460,30 @@ body:not(.user-is-tabbing) a:focus {
 .card-text {
   display: flex;
   flex-direction: column;
-  align-items: center;      /* centra titolo e paragrafo */
-  margin-top: 1.5em;        /* spazio tra immagine e testo */
-  margin-bottom: 1.5em;     /* spazio sotto il testo */
+  align-items: center;   /* centra titolo e paragrafo */
+  margin-top: 2em;       /* più spazio sopra il testo */
+  margin-bottom: 1.5em;  /* spazio sotto il testo */
 }
 
-.card-text h3,
+.card-text h3 {
+  text-align: center;
+  margin: 0 0 0.5rem;   /* spazio sotto il titolo */
+}
+
 .card-text p {
-  text-align: center;       /* centra titolo e paragrafo */
-  margin: 0.5rem 0 0;       /* spazio tra elementi */
+  text-align: center;
+  margin: 0;             /* nessuno spazio extra se non vuoi descrizione */
 }
 
-/* Lista compatta allineata a sinistra */
+/* Lista compatta allineata a sinistra, vicino ai pallini */
 .card-text ul {
-  text-align: left;       
-  padding-left: 1.5em;    
-  margin-top: 1em;        
-  margin-bottom: 0;       
-  line-height: 1.4;       
+  text-align: left;
+  padding-left: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0;
+  line-height: 1.4;
 }
 
 .card-text ul li {
-  margin-bottom: 0.3em;   
+  margin-bottom: 0.3em;
 }
