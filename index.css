@@ -1472,3 +1472,9 @@ body:not(.user-is-tabbing) a:focus {
   align-items: center; /* centra gli elementi orizzontalmente */
   margin-top: 1em; /* spazio tra immagine e testo */
 }
+
+.card-text {
+  text-align: center; /* Centra titolo, paragrafo e lista orizzontalmente */
+  margin-top: 1.5em; /* Aggiunge spazio sopra il testo */
+  margin-bottom: 1.5em; /* Aggiunge spazio sotto il testo */
+}
