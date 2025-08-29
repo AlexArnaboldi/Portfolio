@@ -1478,3 +1478,61 @@ body:not(.user-is-tabbing) a:focus {
   margin-top: 1.5em; /* Aggiunge spazio sopra il testo */
   margin-bottom: 1.5em; /* Aggiunge spazio sotto il testo */
 }
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; /* rende tutte le card alte uguali */
+  flex-wrap: wrap;       /* permette di andare a capo se lo schermo è stretto */
+  gap: 20px;             /* spazio tra le card */
+}
+
+.card {
+  flex: 1 1 calc(33.333% - 20px); /* tre colonne */
+  max-width: calc(33.333% - 20px);
+  background: transparent;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
+  overflow: hidden;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px; /* angoli arrotondati */
+}
+
+.card-text {
+  text-align: center;       /* centra titolo e paragrafo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centra orizzontalmente */
+  margin-top: 1.5em;        /* spazio tra immagine e testo */
+  margin-bottom: 1.5em;     /* spazio sotto il testo */
+}
+
+.card-text h3,
+.card-text p {
+  margin: 0.5rem 0 0;      /* spazio sotto l’immagine e tra testo */
+}
+
+/* Lista compatta allineata a sinistra */
+.card-text ul {
+  text-align: left;       
+  padding-left: 1.5em;    
+  margin-top: 1em;        
+  margin-bottom: 0;       
+  line-height: 1.4;       
+}
+
+.card-text ul li {
+  margin-bottom: 0.3em;   
+}
