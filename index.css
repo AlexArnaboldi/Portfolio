@@ -1423,61 +1423,9 @@ body:not(.user-is-tabbing) a:focus {
   color: var(--white-1);
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column; /* immagine sopra, testo sotto */
-  text-align: center;
-  margin-bottom: 1.5rem; /* spazio tra le card */
-}
-
-.project-card img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 6px; /* opzionale, angoli arrotondati */
-}
-
-.project-card h3,
-.project-card p {
-  margin: 0.5rem 0 0; /* spazio sotto l'immagine e tra testo */
-}
-
-.projects-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch; /* le rende tutte alte uguali */
-  flex-wrap: wrap; /* permette di andare a capo se lo schermo è stretto */
-  gap: 20px;
-}
-
-.card {
-  flex: 1 1 calc(33.333% - 20px); /* tre colonne */
-  max-width: calc(33.333% - 20px);
-  background: transparent;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.card, .card-text, .thumbnail {
-  background: transparent !important;
-}
-
-.card-text {
-  text-align: center; /* centra titolo, paragrafo e lista */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* centra gli elementi orizzontalmente */
-  margin-top: 1em; /* spazio tra immagine e testo */
-}
-
-.card-text {
-  text-align: center; /* Centra titolo, paragrafo e lista orizzontalmente */
-  margin-top: 1.5em; /* Aggiunge spazio sopra il testo */
-  margin-bottom: 1.5em; /* Aggiunge spazio sotto il testo */
-}
+/* --------------------------------------- */
+/* ----- Projects / Cards ----- */
+/* --------------------------------------- */
 
 .projects-container {
   display: flex;
@@ -1511,17 +1459,17 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .card-text {
-  text-align: center;       /* centra titolo e paragrafo */
   display: flex;
   flex-direction: column;
-  align-items: center;      /* centra orizzontalmente */
+  align-items: center;      /* centra titolo e paragrafo */
   margin-top: 1.5em;        /* spazio tra immagine e testo */
   margin-bottom: 1.5em;     /* spazio sotto il testo */
 }
 
 .card-text h3,
 .card-text p {
-  margin: 0.5rem 0 0;      /* spazio sotto l’immagine e tra testo */
+  text-align: center;       /* centra titolo e paragrafo */
+  margin: 0.5rem 0 0;       /* spazio tra elementi */
 }
 
 /* Lista compatta allineata a sinistra */
