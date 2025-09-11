@@ -118,59 +118,42 @@
   <div class="row">
     <div class="work__boxes">
       <h2>SHADOWLOOP</h2>
-      <div class="workbox">
-        <div class="shadowloop-container">
+      <div class="shadowloop-layout">
 
-          <!-- Video grande centrale -->
-          <div class="shadowloop-main-video">
-            <video autoplay muted loop style="width: 100%; height: 520px; border-radius: 8px; object-fit: cover;">
-              <source src="./images/ShadowLoop/SDL-Resolution.mp4" type="video/mp4">
-            </video>
-          </div>
-
-          <!-- Due colonne di testo affiancate -->
-          <div class="shadowloop-text-columns">
-            <div class="text-column">
-              <h3><em>First-person puzzle horror game</em></h3>
-              <p>
-                Shadowloop is a first-person horror puzzle game in which the player must solve environmental
-                challenges to break out of a recurring time loop.<br><br>
-                The project was developed in a structured team environment, simulating a professional studio workflow
-                with a clear division between designers and programmers.
-                The game features interactive physics-based object rotation, enemy AI, and dynamic level transitions.
-              </p>
-              Role: Game Programmer.
-              <ul>
-                <li>Unreal Engine 5</li>
-                <li>C++</li>
-                <li>Blueprint</li>
-              </ul>
-            </div>
-            <div class="text-column">
-              <h4>My contributions:</h4>
-              <ul>
-                <li>Developed the core loop mechanic, repositioning the player in real time to simulate a recursive
-                  environment.</li>
-                <li>Created the main menu system, including communication between UI elements and in-scene Actors for
-                  a responsive startup flow.</li>
-                <li>Designed and implemented the in-game UI: pause menu, game over screen, and credits panel, building
-                  a communicative flow between transitions and menus to maintain clarity and immersion.</li>
-                <li>Built a basic save system to store key player progress and game state data across sessions.</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- I due video piccoli in riga -->
-          <div class="shadowloop-small-videos">
-            <video autoplay muted loop style="width: 70%; height: 260px; border-radius: 8px; object-fit: cover;">
-              <source src="./images/ShadowLoop/clipmenu.mp4" type="video/mp4">
-            </video>
-            <video autoplay muted loop style="width: 70%; height: 260px; border-radius: 8px; object-fit: cover;">
-              <source src="./images/ShadowLoop/SDL-LoopMec2.mp4" type="video/mp4">
-            </video>
-          </div>
-
+        <!-- Colonna sinistra: video -->
+        <div class="shadowloop-left">
+          <video autoplay muted loop style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
+            <source src="./images/ShadowLoop/SDL-Resolution.mp4" type="video/mp4">
+          </video>
         </div>
+
+        <!-- Colonna destra: testo -->
+        <div class="shadowloop-right">
+          <h3>What is it?</h3>
+          <p>
+            Multiplayer coop game in which you and your friends have to destroy as much asteroids and satellites as you can in the given time.
+          </p>
+
+          <h3>When was it made?</h3>
+          <p>
+            Summer 2024, developed in ~3 weeks.
+          </p>
+
+          <h3>Who made it?</h3>
+          <p>
+            Me on my own.
+          </p>
+
+          <h3>What did I learn/practice?</h3>
+          <ul>
+            <li>Multiplayer in Unreal Engine entirely in C++ (framework, replication, RPC, relevancy, sessions...)</li>
+            <li>Creation and management of modules/plugins for clean architecture</li>
+            <li>UI programming in C++</li>
+            <li>Integration with FMOD for sound FX</li>
+            <li>Debugging and tools programming</li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </div>
