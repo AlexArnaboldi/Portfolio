@@ -1491,3 +1491,21 @@ body:not(.user-is-tabbing) a:focus {
   margin-bottom: 0.3em;   
 }
 
+.retro-videos {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.retro-videos .video-wrapper {
+  width: 50%;
+}
+
+.text-wrapper h3 {
+  margin-top: 1.5rem;
+}
+
+.text-wrapper ul {
+  padding-left: 1.2rem;
+}
