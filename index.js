@@ -42,10 +42,12 @@ window.addEventListener("scroll", () => {
 
 function openModal(id) {
   document.getElementById(id).style.display = 'block';
+  document.body.classList.add('modal-open');
 }
 
 function closeModal(id) {
   document.getElementById(id).style.display = 'none';
+  document.body.classList.remove('modal-open');
 }
 
 window.addEventListener('click', function(e) {
