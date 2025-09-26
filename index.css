@@ -886,6 +886,10 @@ body:not(.user-is-tabbing) a:focus {
   margin: 0 auto;
 }
 
+.modal-inner h2 {
+  margin-bottom: 6rem;
+}
+
 .modal-inner img,
 .modal-inner video {
   width: 100%;
