@@ -896,6 +896,10 @@ body:not(.user-is-tabbing) a:focus {
   object-fit: cover;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .close {
   color: #aaa;
   float: right;
