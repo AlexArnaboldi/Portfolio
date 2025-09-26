@@ -857,7 +857,7 @@ body:not(.user-is-tabbing) a:focus {
   object-fit: cover;
 }
 
-/* MODAL SETUP */
+/* MODAL SETUP- */
 
 .modal {
   display: none;
