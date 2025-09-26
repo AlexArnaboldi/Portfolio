@@ -888,7 +888,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .modal-inner h2 {
   max-width: 1200px;
-  margin: 0 auto 6rem;
+  margin: 6rem auto 6rem;
 }
 
 .modal-inner h3,
@@ -918,9 +918,4 @@ body.modal-open {
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
-}
-
-.modal h2, .modal h3, .modal p, .modal ul {
-  max-width: 1200px;
-  margin: 0 auto 1rem;
 }
