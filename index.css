@@ -856,3 +856,31 @@ body:not(.user-is-tabbing) a:focus {
   border: none;
   object-fit: cover;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  overflow-y: auto;
+}
+
+.modal-content {
+  background-color: #1e1e1e;
+  margin: 5% auto;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 1000px;
+  color: #fff;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
