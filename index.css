@@ -880,6 +880,15 @@ body:not(.user-is-tabbing) a:focus {
   overflow-y: auto;
 }
 
+.modal-content img {
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 2rem;
+  border-radius: 8px;
+  object-fit: cover;
+}
 
 .close {
   color: #aaa;
