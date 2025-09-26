@@ -887,7 +887,15 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .modal-inner h2 {
-  margin-bottom: 6rem;
+  max-width: 1200px;
+  margin: 0 auto 6rem;
+}
+
+.modal-inner h3,
+.modal-inner p,
+.modal-inner ul {
+  max-width: 1200px;
+  margin: 0 auto 1rem;
 }
 
 .modal-inner img,
