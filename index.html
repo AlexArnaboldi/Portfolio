@@ -147,24 +147,19 @@
     </div>
   
     <!-- Retro Games Collection -->
-    <div class="card">
-      <div class="thumbnail">
-        <a href="#RetroGames">
-          <img src="./images/RetroGames/Overview.png" alt="Retro Games Collection Overview" />
-        </a>
-      </div>
-      <div class="card-text">
-        <h3>Retro Games Collection</h3>
-        <ul>
-          <li>Unity</li>
-          <li>C#</li>
-        </ul>
-      </div>
-    </div>
-
-    </div>
+    <div class="card" onclick="openModal('retroModal')">
+  <div class="thumbnail">
+    <img src="./images/RetroGames/Overview.png" alt="Retro Games Collection Overview" />
   </div>
-</section>
+  <div class="card-text">
+    <h3>Retro Games Collection</h3>
+    <ul>
+      <li>Unity</li>
+      <li>C#</li>
+    </ul>
+  </div>
+</div>
+
 
                                               <!-- WORKS -->
 
@@ -456,11 +451,43 @@ Beyond game development, I enjoy playing volleyball, staying active through phys
     </div>
   </section>
 
-
+<!-- RETRO GAME PROVA -->
   <a href="#top" class="back-to-top" title="Back to Top">
     <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image" />
   </a>
   <script src="./index.js"></script>
+
+      <div id="retroModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('retroModal')">&times;</span>
+    <h2>Retro Games Collection</h2>
+    <div class="retro-videos">
+      <div class="video-wrapper">
+        <video autoplay muted loop style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; object-fit: cover;">
+          <source src="./images/RetroGames/Snake.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="video-wrapper">
+        <video autoplay muted loop style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; object-fit: cover;">
+          <source src="./images/RetroGames/SpaceInvader.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="text-wrapper">
+      <h3>Game</h3>
+      <p>Collection of arcade-style remakes including Pong, Space Invaders, and Snake. Developed in Unity using C#.</p>
+      <h3>Schedule</h3>
+      <p>Personal project to begin understanding video game programming.</p>
+      <h3>What I Learned</h3>
+      <ul>
+        <li>Understanding how programming logic operates</li>
+        <li>Learning hierarchical structures and component-based architecture</li>
+        <li>Discovering the core principles of game engines and gameplay flow</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 </body>
 
 </html>
