@@ -790,6 +790,23 @@ body:not(.user-is-tabbing) a:focus {
   margin-bottom: 0.3em;   
 }
 
+/* Tablet: 2 card per riga */
+@media (max-width: 900px) {
+  .card {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+}
+
+/* Mobile: 1 card per riga */
+@media (max-width: 600px) {
+  .card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+
 .retro-videos {
   display: flex;
   flex-direction: row;
