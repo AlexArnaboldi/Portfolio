@@ -421,21 +421,14 @@ Beyond game development, I enjoy playing volleyball, staying active through phys
           </div>
 
           <div class="about__photo-container">
+            
             <img
               class="about__photo"
               src="./images/foto-profilo.png"
               alt="Profile photo"
-              style="
-                display: block;
-                width: 450px;
-                height: 450px;
-                object-fit: cover;
-                border-radius: 50%;
-                overflow: hidden;
-                box-shadow: 0 2px 16px rgba(0,0,0,0.15);
-                margin: 0 auto;
-              "
+              style="width: 100%; max-width: 300px; aspect-ratio: 1/1; object-fit: cover; border-radius: 50%; box-shadow: 0 2px 16px rgba(0,0,0,0.15); margin: 0 auto;"
             />
+
           </div>
         </div>
       </div>
@@ -445,20 +438,17 @@ Beyond game development, I enjoy playing volleyball, staying active through phys
   <section class="contact" id="contact">
     <div class="row">
       <h2>Get in Touch</h2>
-      <div style="display: flex; justify-content: center; align-items: center; gap: 8em;">
-        <div>
-          <a href="mailto:alex.arnaboldi97@hotmail.com" class="btn">alex.arnaboldi97@hotmail.com</a>
-        </div>
-        <ul class="footer__social-links">
-          <li class="footer__social-link-item">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 2rem; margin-top: 2rem;">
+        <a href="mailto:alex.arnaboldi97@hotmail.com" class="btn">alex.arnaboldi97@hotmail.com</a>
+        <ul style="display: flex; gap: 1rem; list-style: none; padding: 0; margin: 0;">
+          <li>
             <a href="https://www.linkedin.com/in/alex-arnaboldi-127492363">
-              <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image"
-                alt="Linkedin">
+              <img src="./images/linkedin.svg" alt="LinkedIn" style="width: 32px; height: 32px;" />
             </a>
           </li>
-          <li class="footer__social-link-item">
-            <a href="https://github.com/AlexArnaboldi" title="Link to Github Profile">
-              <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          <li>
+            <a href="https://github.com/AlexArnaboldi">
+              <img src="./images/github.svg" alt="GitHub" style="width: 32px; height: 32px;" />
             </a>
           </li>
         </ul>
