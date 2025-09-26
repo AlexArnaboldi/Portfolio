@@ -870,7 +870,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .modal-content {
-  background-color: #0f172a;
+  background-color: #263238;
   margin: 0;
   padding: 3rem;
   border-radius: 0;
