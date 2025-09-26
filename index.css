@@ -880,8 +880,13 @@ body:not(.user-is-tabbing) a:focus {
   overflow-y: auto;
 }
 
-.modal-content img {
+.modal-inner {
   max-width: 1200px;
+  margin: 0 auto;
+}
+
+.modal-inner img,
+.modal-inner video {
   width: 100%;
   height: auto;
   display: block;
