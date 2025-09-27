@@ -61,21 +61,20 @@
 
       
       <!-- GoldSoul -->
-      <div class="card">
+      <div class="card" onclick="openModal('goldenSoulsModal')">
         <div class="thumbnail">
-          <a href="#GoldenSouls">
-            <img src="./images/GoldSouls/GoldSouls-Overview.png" alt="GoldSoul Overview" />
-          </a>
+          <img src="./images/GoldSouls/GoldSouls-Overview.png" alt="Golden Souls Overview" />
         </div>
         <div class="card-text">
-          <h3>Golden Soul</h3>
+          <h3>Golden Souls</h3>
           <ul>
-            <li>Personal Project / Solo Dev</li>
+            <li>Solo Project</li>
             <li>Unreal Engine</li>
             <li>C++</li>
           </ul>
         </div>
       </div>
+
 
     <!-- Shadowloop -->
     <div class="card" onclick="openModal('shadowloopModal')">
@@ -333,6 +332,41 @@ Beyond game development, I enjoy playing volleyball, staying active through phys
       </div>
     </div>
   </section>
+
+                                            <!----------------------------- MODULARI ------------------------------->
+        <!-- Golde Souls -->
+      <div id="goldenSoulsModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('goldenSoulsModal')">&times;</span>
+
+    <div class="modal-inner">
+      <h2>Golden Souls</h2>
+
+      <div class="youtube-wrapper">
+        <iframe src="https://www.youtube.com/embed/hhxUN1yKkK8" title="Golden Souls Trailer" allowfullscreen></iframe>
+      </div>
+
+      <div class="text-wrapper">
+        <h3>Game</h3>
+        <p>Golden Souls is a third-person action RPG inspired by the Souls-like genre. Set in a dark fantasy world, players explore cursed dungeons, wield a variety of melee weapons, and battle monstrous enemies to survive.</p>
+
+        <h3>Schedule</h3>
+        <p>This solo project was developed to push my skills in Unreal Engine and C++. While I followed a structured Udemy course, I also implemented original features such as a custom bow system and the UEnemySmartAttack component for advanced enemy behaviors and special attacks. The game features an open-world structure with characters and enemies built around attributes like health and stamina. I designed a modular combat system supporting multiple weapon types and animation states. The architecture is primarily written in C++, with selective Blueprint integration to streamline visual scripting and UI logic. Throughout development, I focused on clean code practices, refactoring, and debugging to ensure scalability and performance.</p>
+
+        <h3>What I Learned</h3>
+        <ul>
+          <li>Designed an open-world environment using Unreal Engine 5's Landscape and Foliage systems</li>
+          <li>Built complex Animation Blueprints, retargeted animations, and used Control Rig with inverse kinematics for visual polish</li>
+          <li>Developed melee combat systems with swords and other weapons, including Motion Warping for root motion animations</li>
+          <li>Implemented health bars, player stats, and enemy AI with attack logic</li>
+          <li>Created multiple enemy types, from humanoid warriors to monstrous creatures</li>
+          <li>Applied best coding practices in C++, including use of data structures, algorithms, and design patterns</li>
+          <li>Refactored codebase for clarity and maintainability, with strong emphasis on debugging and performance optimization</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
 
         <!-- Shadowloop -->
       <div id="shadowloopModal" class="modal">
