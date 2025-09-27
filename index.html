@@ -95,11 +95,9 @@
     </div>
 
       <!-- Multiplayer card -->
-    <div class="card">
+    <div class="card" onclick="openModal('multiplayerModal')">
       <div class="thumbnail">
-        <a href="#Multiplayer">
-          <img src="./images/Multiplayer/Multiplayer-Overview.png" alt="Multiplayer Overview" />
-        </a>
+        <img src="./images/Multiplayer/MultiplayerCover.png" alt="Multiplayer Overview">
       </div>
       <div class="card-text">
         <h3>Multiplayer</h3>
@@ -110,6 +108,7 @@
         </ul>
       </div>
     </div>
+
 
 
     <!-- AirHockey card -->
@@ -336,6 +335,40 @@ Beyond game development, I enjoy playing volleyball, staying active through phys
     </div>
   </section>
 
+      
+      <!-- Multiplayer -->
+    <div id="multiplayerModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('multiplayerModal')">&times;</span>
+    
+        <div class="modal-inner">
+          <h2>Multiplayer</h2>
+    
+          <div class="video-wrapper">
+            <video autoplay muted loop style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; object-fit: cover;">
+              <source src="./images/Multiplayer/Multiplayer.mp4" type="video/mp4">
+            </video>
+          </div>
+    
+          <div class="text-wrapper">
+            <h3>Game</h3>
+            <p>Third-person multiplayer shooter game. The player who knocks out two opponents in a row wins the match.</p>
+    
+            <h3>Schedule</h3>
+            <p>Academic project aimed at understanding the logical structure behind networking, with one player acting as the server and others connecting as clients. Focused on structuring and replicating variables on the server side, and managing individual HUDs for each player.</p>
+    
+            <h3>What I Learned</h3>
+            <ul>
+              <li>Control of multiple players through GameController and spawn logic</li>
+              <li>Server hierarchy and management of multiple players</li>
+              <li>Replicated variables and HUD customization per player</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      
       <!-- Air Hockey -->
       <div id="airHockeyModal" class="modal">
         <div class="modal-content">
