@@ -78,11 +78,9 @@
       </div>
 
     <!-- Shadowloop -->
-    <div class="card">
+    <div class="card" onclick="openModal('shadowloopModal')">
       <div class="thumbnail">
-        <a href="#shadowloop">
-          <img src="./images/ShadowLoop/Overview.png" alt="Shadowloop Overview" />
-        </a>
+        <img src="./images/ShadowLoop/Overview.png" alt="Shadowloop Overview" />
       </div>
       <div class="card-text">
         <h3>Shadowloop</h3>
@@ -93,6 +91,7 @@
         </ul>
       </div>
     </div>
+
 
       <!-- Multiplayer card -->
     <div class="card" onclick="openModal('multiplayerModal')">
@@ -335,7 +334,46 @@ Beyond game development, I enjoy playing volleyball, staying active through phys
     </div>
   </section>
 
-      
+        <!-- Shadowloop -->
+      <div id="shadowloopModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('shadowloopModal')">&times;</span>
+
+    <div class="modal-inner">
+      <h2>Shadowloop</h2>
+
+      <div class="video-wrapper">
+        <video autoplay muted loop style="width: 100%; height: auto; border-radius: 8px; object-fit: cover;">
+          <source src="./images/ShadowLoop/SDL-Resolution.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="text-wrapper">
+        <h3>Game</h3>
+        <p>Shadowloop is a first-person horror puzzle game in which the player must solve environmental challenges to break out of a recurring time loop.</p>
+
+        <h3>Schedule</h3>
+        <p>The project was developed in a structured team environment, simulating a professional studio workflow with a clear division between designers and programmers. The game features interactive physics-based object rotation, enemy AI, and dynamic level transitions.</p>
+
+        <p>You can play it on <a href="https://digital-bros-game-academy.itch.io/shadowloop" target="_blank" rel="noopener noreferrer">itch.io</a>.</p>
+
+        <h3>My Contribution as Game Programmer</h3>
+        <ul>
+          <li>Developed the core mechanic: teleporting the player in real time to simulate recursive environments</li>
+          <li>Created the main menu system, including communication between UI elements and in-scene Actors</li>
+          <li>UI programming in C++</li>
+          <li>Designed and implemented the in-game UI: pause menu, game over screen, and credits panel</li>
+          <li>Built a basic save system to store key player progress and game state across sessions</li>
+        </ul>
+
+        <div class="youtube-wrapper">
+          <iframe src="https://www.youtube.com/embed/AMNR6V7qsHk" title="Shadowloop Gameplay" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
       <!-- Multiplayer -->
     <div id="multiplayerModal" class="modal">
       <div class="modal-content">
