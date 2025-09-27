@@ -113,11 +113,9 @@
 
 
     <!-- AirHockey card -->
-    <div class="card">
+    <div class="card" onclick="openModal('airHockeyModal')">
       <div class="thumbnail">
-        <a href="#AirHockey">
-          <img src="./images/AirHockey/AirHockeyOverview.png" alt="AirHockey Overview" />
-        </a>
+        <img src="./images/AirHockey/AirHockeyOverview.png" alt="AirHockey Overview">
       </div>
       <div class="card-text">
         <h3>AirHockey</h3>
@@ -128,6 +126,7 @@
         </ul>
       </div>
     </div>
+
 
   
     <!-- The Floor is Lava -->
@@ -288,78 +287,6 @@
 </section>
 
 
-    <!-- 🔹 AirHockey -->
-    <section class="work" id="AirHockey">
-  <div class="row">
-    <div class="work__boxes">
-      <h2>AirHockey</h2>
-      <div class="hockey-layout">
-
-        <!-- Video centrale -->
-        <div class="video-wrapper">
-          <video autoplay muted loop style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; object-fit: cover; object-position: center;">
-            <source src="./images/AirHockey/AirHockey - Video.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Testo sotto -->
-        <div class="text-wrapper">
-          <h3>Game</h3>
-          <p>Physics-based air hockey game. The goal is to score in the opponent’s net but watch out for the bumpers!</p>
-
-          <h3>Schedule</h3>
-          <p>Academic project with particular emphasis on collision settings and physics materials in Unreal Engine 5.
-            Exploration of impulse and oscillatory forces to create dynamic effects like magnetism and repulsion.</p>
-
-          <h3>What I Learned</h3>
-          <ul>
-            <li>Created basic movement components</li>
-            <li>Implemented a Pawn driven by physical forces</li>
-            <li>Development of a magnetic force component and bumpers</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- 🔹 The Floor is Lava -->
-<section class="work" id="FloorIsLava">
-  <div class="row">
-    <div class="work__boxes">
-      <h2>The Floor is Lava</h2>
-      <div class="lava-layout">
-        
-        <!-- Video in alto -->
-        <div class="video-wrapper">
-          <video autoplay muted loop style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; object-fit: cover; object-position: center;">
-            <source src="./images/Platforming/Platforming.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <!-- Testo sotto -->
-        <div class="text-wrapper">
-          <h3>Game</h3>
-          <p>Third-person platforming prototype developed to practice core functionalities in Unreal Engine 5 using Blueprints.</p>
-
-          <h3>Schedule</h3>
-          <p>Academic project focused on foundational gameplay systems, interface design, and visual feedback integration.</p>
-
-          <h3>What I Learned</h3>
-          <ul>
-            <li>Implemented respawn and checkpoint systems</li>
-            <li>Designed shooting mechanics responsive to player movement</li>
-            <li>Created visual effects using Materials, Material Instances, and Niagara particle systems</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-
     <section class="about" id="about">
       <div class="row">
         <h2>About Me</h2>
@@ -409,6 +336,39 @@ Beyond game development, I enjoy playing volleyball, staying active through phys
     </div>
   </section>
 
+      <!-- Air Hockey -->
+      <div id="airHockeyModal" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('airHockeyModal')">&times;</span>
+      
+          <div class="modal-inner">
+            <h2>AirHockey</h2>
+      
+            <div class="video-wrapper">
+              <video autoplay muted loop style="width: 100%; aspect-ratio: 16/9; border-radius: 8px; object-fit: cover;">
+                <source src="./images/AirHockey/AirHockey - Video.mp4" type="video/mp4">
+              </video>
+            </div>
+      
+            <div class="text-wrapper">
+              <h3>Game</h3>
+              <p>Physics-based air hockey game. The goal is to score in the opponent’s net but watch out for the bumpers!</p>
+      
+              <h3>Schedule</h3>
+              <p>Academic project with particular emphasis on collision settings and physics materials in Unreal Engine 5. Exploration of impulse and oscillatory forces to create dynamic effects like magnetism and repulsion.</p>
+      
+              <h3>What I Learned</h3>
+              <ul>
+                <li>Created basic movement components</li>
+                <li>Implemented a Pawn driven by physical forces</li>
+                <li>Development of a magnetic force component and bumpers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       <!-- The Floor is Lava -->
       <div id="lavaModal" class="modal">
   <div class="modal-content">
