@@ -730,13 +730,13 @@ body:not(.user-is-tabbing) a:focus {
 .projects-container {
   display: flex;
   justify-content: space-between;
-  align-items: stretch; /* rende tutte le card alte uguali */
-  flex-wrap: wrap;       /* permette di andare a capo se lo schermo è stretto */
-  gap: 20px;             /* spazio tra le card */
+  align-items: stretch; 
+  flex-wrap: wrap;       
+  gap: 20px;             
 }
 
 .card {
-  flex: 1 1 calc(33.333% - 20px); /* tre colonne */
+  flex: 1 1 calc(33.333% - 20px); 
   max-width: calc(33.333% - 20px);
   background: rgba(0,0,0,0.1);
   border-radius: 10px;
@@ -769,18 +769,17 @@ body:not(.user-is-tabbing) a:focus {
 .card-text {
   display: flex;
   flex-direction: column;
-  align-items: center;      /* centra titolo e paragrafo */
-  margin-top: 1.5em;        /* spazio tra immagine e testo */
-  margin-bottom: 1.5em;     /* spazio sotto il testo */
+  align-items: center;      
+  margin-top: 1.5em;        
+  margin-bottom: 1.5em;     
 }
 
 .card-text h3,
 .card-text p {
-  text-align: center;       /* centra titolo e paragrafo */
-  margin: 0.5rem 0 0;       /* spazio tra elementi */
+  text-align: center;       
+  margin: 0.5rem 0 0;       
 }
 
-/* Lista compatta allineata a sinistra */
 .card-text ul {
   text-align: left;       
   padding-left: 1.5em;    
@@ -919,7 +918,7 @@ body.modal-open {
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: bold;
   cursor: pointer;
 }
