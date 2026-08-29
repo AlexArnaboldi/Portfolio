@@ -942,3 +942,16 @@ body.modal-open {
   font-weight: bold;
   cursor: pointer;
 }
+
+.back-arrow {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 1.5rem;
+    color: #ff4d4d;       /* rosso del trattino Works */
+    background-color: #1a1a1a;
+    padding: 10px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 9999;
+}
