@@ -745,11 +745,13 @@ body:not(.user-is-tabbing) a:focus {
     font-weight: 100;
     display: inline-block;
     display: inline-block;
-    text-align: center;    
+    text-align: center;
+    white-space: nowrap;
 }
 
 .modal-tags {
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 12px;
     margin: 20px 0;
