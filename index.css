@@ -727,6 +727,18 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Projects / Cards ----- */
 /* --------------------------------------- */
 
+.work-tag {
+    background-color: #e5e5e5;      
+    color: #ff3b3b;                
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
 .projects-container {
   display: flex;
   justify-content: space-between;
