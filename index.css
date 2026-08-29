@@ -946,14 +946,6 @@ body.modal-open {
   overflow: hidden;
 }
 
-/* .close {
-  color: #aaa;
-  float: right;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-} */
-
 .back-arrow {
     position: fixed;
     top: 20px;
