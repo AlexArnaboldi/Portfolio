@@ -727,6 +727,7 @@ body:not(.user-is-tabbing) a:focus {
 /* ----- Projects / Cards ----- */
 /* --------------------------------------- */
 
+/* -- Tag In -- */
 .card-tags {
     display: flex;
     flex-direction: column;
@@ -746,6 +747,14 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     text-align: center;    
 }
+
+.modal-tags {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin: 20px 0;
+}
+/* -- Tag Out -- */
 
 .projects-container {
   display: flex;
