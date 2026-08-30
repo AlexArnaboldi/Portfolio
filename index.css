@@ -957,3 +957,8 @@ body.modal-open {
     cursor: pointer;
     z-index: 9999;
 }
+
+.spacer {
+  height: 2rem;
+}
+
