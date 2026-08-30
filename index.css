@@ -872,7 +872,7 @@ body:not(.user-is-tabbing) a:focus {
   object-fit: cover;
 }
 
-/*.youtube-wrapper {
+.youtube-wrapper {
   position: relative;
   width: 100%;
   padding-top: 56.25%; 
@@ -888,29 +888,7 @@ body:not(.user-is-tabbing) a:focus {
   width: 100%;
   height: 100%;
   border: none;
-}*/
-.video-responsive {
-    width: 100%;
-    aspect-ratio: 16 / 9;
-    border-radius: 8px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    border: none;
 }
-
-.youtube-wrapper {
-  width: 100%;
-  aspect-ratio: 16/9;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.youtube-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
 
 /* MODAL SETUP- */
 
